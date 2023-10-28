@@ -1,7 +1,7 @@
 version: '3'
 services:
 
-    dynamodb:
+    dynamodb-local:
       command: "-jar DynamoDBLocal.jar -sharedDb -dbPath ./data"
       image: "amazon/dynamodb-local:latest"
       container_name: dynamodb-local
@@ -11,7 +11,7 @@ services:
         - "./database/dynamodb:/home/dynamodblocal/data"
       working_dir: /home/dynamodblocal
 
-    app:
+    fastapi-app:
       build: .
       container_name: app-node
       # command: uvicorn src.main:app --host 0.0.0.0 --port 80 --reload
