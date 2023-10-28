@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run your Python import script
-python database/create_table.py
+python database/create_table_v2.py
 python database/import_data_v2.py
 
 # Start the FastAPI application using uvicorn
