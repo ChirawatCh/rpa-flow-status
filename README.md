@@ -1,6 +1,7 @@
 # Flow Management API
 
 This is a simple API for managing "flows" stored in DynamoDB, built with FastAPI.
+![Screenshot 2566-10-31 at 09 46 35](https://github.com/ChirawatCh/rpa-flow-status/assets/90750974/d78ab9d0-81d8-4020-b5bf-84b2458f6156)
 
 ## Endpoints
 
