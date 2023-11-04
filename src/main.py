@@ -27,7 +27,7 @@ class FlowStatusUpdate(BaseModel):
     status: str = "COMPLETED"
 
 # Create a new flow status
-@app.post("/flows/", response_model=FlowStatus)
+@app.post("/flows", response_model=FlowStatus)
 def create_flow(flow: FlowStatusCreate):
     current_time_unix = int(datetime.utcnow().timestamp())  # Convert to Unix timestamp (seconds)
     item = {
